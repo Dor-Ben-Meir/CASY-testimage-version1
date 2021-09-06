@@ -1,0 +1,67 @@
+%implements "chartSource" "C"
+%function ChartConfig(block, system) void
+  %createrecord chartConfiguration { ...
+          executeAtInitialization  0 ...
+  }
+  %return chartConfiguration
+%endfunction
+%function ChartDataMap(block, system) void
+  %createrecord ChartDataElements {\
+    NumChartData   7 \
+    ChartDataDefaults {\
+      RecordType   "ChartData"\
+      Dimensions   []\
+      IsTestPoint  0\
+    }\
+    ChartData {\
+      Name         "fp"\
+      Description  "EmlPersistent"\
+      SFName       ""\
+      Path         ""\
+      SrcLocation  "Copy_of_Corneto_flight_program_control:1039:597-599"\
+    }\
+    ChartData {\
+      Name         "isflushed"\
+      Description  "EmlPersistent"\
+      SFName       ""\
+      Path         ""\
+      SrcLocation  "Copy_of_Corneto_flight_program_control:1039:600-609"\
+    }\
+    ChartData {\
+      Name         "isopen"\
+      Description  "EmlPersistent"\
+      SFName       ""\
+      Path         ""\
+      SrcLocation  "Copy_of_Corneto_flight_program_control:1039:610-616"\
+    }\
+    ChartData {\
+      Name         "count"\
+      Description  "EmlPersistent"\
+      SFName       ""\
+      Path         ""\
+      SrcLocation  "Copy_of_Corneto_flight_program_control:1039:617-622"\
+    }\
+    ChartData {\
+      Name         "count_not_empty"\
+      Description  "EmlPersistentSentinel"\
+      SFName       ""\
+      Path         ""\
+      SrcLocation  "Copy_of_Corneto_flight_program_control:1039:617-622"\
+    }\
+    ChartData {\
+      Name         "elem_size"\
+      Description  "EmlPersistent"\
+      SFName       ""\
+      Path         ""\
+      SrcLocation  "Copy_of_Corneto_flight_program_control:1039:624-633"\
+    }\
+    ChartData {\
+      Name         "vect_size"\
+      Description  "EmlPersistent"\
+      SFName       ""\
+      Path         ""\
+      SrcLocation  "Copy_of_Corneto_flight_program_control:1039:634-643"\
+    }\
+  }
+  %return ChartDataElements
+%endfunction

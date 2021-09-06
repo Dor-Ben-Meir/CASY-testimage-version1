@@ -1,0 +1,888 @@
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" /><link rel="stylesheet" type="text/css" href="rtwreport.css" /><script language="JavaScript" type="text/javascript">function rtwTableShrink(o) {var t = o.nextSibling;if (t.nodeType != 1) {t = t.nextSibling;}if (t.style.display == "none") {t.style.display = "";o.innerHTML = "[-]"} else {t.style.display = "none";o.innerHTML = "[+] ... "}}</script><script language="JavaScript" type="text/javascript" src="rtwreport_utils.js"></script><meta http-equiv="Content-Type" content="text/html; charset=UTF-8" /><title>
+Code Interface Report for PwmBox
+</title>
+
+</head>
+<body ONLOAD="try {if (top) {if (top.rtwPageOnLoad) top.rtwPageOnLoad('rtwIdCodeInterface'); else local_onload();}} catch(err) {};">
+<h1>
+Code Interface Report for PwmBox
+</h1>
+<h3>
+Table of Contents
+</h3>
+<ul>
+<li>
+<a href="#sec_Entry-Point_Functions">
+Entry-Point Functions
+</a>
+
+</li>
+<li>
+<a href="#sec_Inports">
+Inports
+</a>
+
+</li>
+<li>
+<a href="#sec_Outports">
+Outports
+</a>
+
+</li>
+<li>
+<a href="#sec_Interface_Parameters">
+Interface Parameters
+</a>
+
+</li>
+<li>
+<a href="#sec_Data_Stores">
+Data Stores
+</a>
+
+</li>
+
+</ul>
+<h3>
+<a name="sec_Entry-Point_Functions">
+Entry-Point Functions
+</a>
+
+</h3>
+<p>
+Function: <a href="PwmBox_cpp.html#fcn_PwmBox_initialize">PwmBox_initialize</a>
+</p>
+<table width="100%" class="AltRow" cellspacing="0">
+<tr class="even">
+<td width="25%" align="left" valign="top">
+Prototype
+</td>
+<td width="75%" align="left" valign="top">
+<b>
+void PwmBox_initialize(void)
+</b>
+
+</td>
+
+</tr>
+<tr class="odd">
+<td width="25%" align="left" valign="top">
+Description
+</td>
+<td width="75%" align="left" valign="top">
+Initialization entry point of generated code
+</td>
+
+</tr>
+<tr class="even">
+<td width="25%" align="left" valign="top">
+Timing
+</td>
+<td width="75%" align="left" valign="top">
+Must be called exactly once
+</td>
+
+</tr>
+<tr class="odd">
+<td width="25%" align="left" valign="top">
+Arguments
+</td>
+<td width="75%" align="left" valign="top">
+None
+</td>
+
+</tr>
+<tr class="even">
+<td width="25%" align="left" valign="top">
+Return value
+</td>
+<td width="75%" align="left" valign="top">
+None
+</td>
+
+</tr>
+<tr class="odd">
+<td width="25%" align="left" valign="top">
+Header file
+</td>
+<td width="75%" align="left" valign="top">
+<a href="PwmBox_h.html">PwmBox.h</a>
+</td>
+
+</tr>
+
+</table>
+<p>
+Function: <a href="PwmBox_cpp.html#fcn_PwmBox_step">PwmBox_step</a>
+</p>
+<table width="100%" class="AltRow" cellspacing="0">
+<tr class="even">
+<td width="25%" align="left" valign="top">
+Prototype
+</td>
+<td width="75%" align="left" valign="top">
+<b>
+void PwmBox_step(void)
+</b>
+
+</td>
+
+</tr>
+<tr class="odd">
+<td width="25%" align="left" valign="top">
+Description
+</td>
+<td width="75%" align="left" valign="top">
+Output entry point of generated code
+</td>
+
+</tr>
+<tr class="even">
+<td width="25%" align="left" valign="top">
+Timing
+</td>
+<td width="75%" align="left" valign="top">
+Must be called periodically, every 0.001 seconds
+</td>
+
+</tr>
+<tr class="odd">
+<td width="25%" align="left" valign="top">
+Arguments
+</td>
+<td width="75%" align="left" valign="top">
+None
+</td>
+
+</tr>
+<tr class="even">
+<td width="25%" align="left" valign="top">
+Return value
+</td>
+<td width="75%" align="left" valign="top">
+None
+</td>
+
+</tr>
+<tr class="odd">
+<td width="25%" align="left" valign="top">
+Header file
+</td>
+<td width="75%" align="left" valign="top">
+<a href="PwmBox_h.html">PwmBox.h</a>
+</td>
+
+</tr>
+
+</table>
+<p>
+Function: <a href="PwmBox_cpp.html#fcn_PwmBox_terminate">PwmBox_terminate</a>
+</p>
+<table width="100%" class="AltRow" cellspacing="0">
+<tr class="even">
+<td width="25%" align="left" valign="top">
+Prototype
+</td>
+<td width="75%" align="left" valign="top">
+<b>
+void PwmBox_terminate(void)
+</b>
+
+</td>
+
+</tr>
+<tr class="odd">
+<td width="25%" align="left" valign="top">
+Description
+</td>
+<td width="75%" align="left" valign="top">
+Termination entry point of generated code
+</td>
+
+</tr>
+<tr class="even">
+<td width="25%" align="left" valign="top">
+Timing
+</td>
+<td width="75%" align="left" valign="top">
+Must be called exactly once
+</td>
+
+</tr>
+<tr class="odd">
+<td width="25%" align="left" valign="top">
+Arguments
+</td>
+<td width="75%" align="left" valign="top">
+None
+</td>
+
+</tr>
+<tr class="even">
+<td width="25%" align="left" valign="top">
+Return value
+</td>
+<td width="75%" align="left" valign="top">
+None
+</td>
+
+</tr>
+<tr class="odd">
+<td width="25%" align="left" valign="top">
+Header file
+</td>
+<td width="75%" align="left" valign="top">
+<a href="PwmBox_h.html">PwmBox.h</a>
+</td>
+
+</tr>
+
+</table>
+<h3>
+<a name="sec_Inports">
+Inports
+</a>
+
+</h3>
+<table width="100%" class="AltRow FirstColumn" cellspacing="0">
+<tr class="heading">
+<th width="42%" align="left" valign="top">
+<b>
+Block Name
+</b>
+
+</th>
+<th width="26%" align="left" valign="top">
+<b>
+Code Identifier
+</b>
+
+</th>
+<th width="21%" align="left" valign="top">
+<b>
+Data Type
+</b>
+
+</th>
+<th width="10%" align="right" valign="top">
+<b>
+Dimension
+</b>
+
+</th>
+
+</tr>
+<tr class="even">
+<td width="42%" align="left" valign="top">
+<a href="matlab:coder.internal.code2model('PILAN2021a:90751')" name="code2model" class="code2model">&lt;S1&gt;/Serial In</a>
+</td>
+<td width="26%" align="left" valign="top">
+PwmBox_U.SerialIn
+</td>
+<td width="21%" align="left" valign="top">
+real_T
+</td>
+<td width="10%" align="right" valign="top">
+1
+</td>
+
+</tr>
+
+</table>
+<h3>
+<a name="sec_Outports">
+Outports
+</a>
+
+</h3>
+<span title="Click to shrink or expand table" onclick="rtwTableShrink(this)">[-]</span><table width="100%" class="AltRow FirstColumn" cellspacing="0">
+<tr class="heading">
+<th width="42%" align="left" valign="top">
+<b>
+Block Name
+</b>
+
+</th>
+<th width="26%" align="left" valign="top">
+<b>
+Code Identifier
+</b>
+
+</th>
+<th width="21%" align="left" valign="top">
+<b>
+Data Type
+</b>
+
+</th>
+<th width="10%" align="right" valign="top">
+<b>
+Dimension
+</b>
+
+</th>
+
+</tr>
+<tr class="even">
+<td width="42%" align="left" valign="top">
+synthesized block
+</td>
+<td width="26%" align="left" valign="top">
+PwmBox_Y.signal1
+</td>
+<td width="21%" align="left" valign="top">
+uint16_T
+</td>
+<td width="10%" align="right" valign="top">
+1
+</td>
+
+</tr>
+<tr class="odd">
+<td width="42%" align="left" valign="top">
+synthesized block
+</td>
+<td width="26%" align="left" valign="top">
+PwmBox_Y.signal2
+</td>
+<td width="21%" align="left" valign="top">
+uint16_T
+</td>
+<td width="10%" align="right" valign="top">
+1
+</td>
+
+</tr>
+<tr class="even">
+<td width="42%" align="left" valign="top">
+synthesized block
+</td>
+<td width="26%" align="left" valign="top">
+PwmBox_Y.signal3
+</td>
+<td width="21%" align="left" valign="top">
+uint16_T
+</td>
+<td width="10%" align="right" valign="top">
+1
+</td>
+
+</tr>
+<tr class="odd">
+<td width="42%" align="left" valign="top">
+synthesized block
+</td>
+<td width="26%" align="left" valign="top">
+PwmBox_Y.signal4
+</td>
+<td width="21%" align="left" valign="top">
+uint16_T
+</td>
+<td width="10%" align="right" valign="top">
+1
+</td>
+
+</tr>
+
+</table>
+<h3>
+<a name="sec_Interface_Parameters">
+Interface Parameters
+</a>
+
+</h3>
+<span title="Click to shrink or expand table" onclick="rtwTableShrink(this)">[-]</span><table width="100%" class="AltRow FirstColumn" cellspacing="0">
+<tr class="heading">
+<th width="42%" align="left" valign="top">
+<b>
+Parameter Source
+</b>
+
+</th>
+<th width="26%" align="left" valign="top">
+<b>
+Code Identifier
+</b>
+
+</th>
+<th width="21%" align="left" valign="top">
+<b>
+Data Type
+</b>
+
+</th>
+<th width="10%" align="right" valign="top">
+<b>
+Dimension
+</b>
+
+</th>
+
+</tr>
+<tr class="even">
+<td width="42%" align="left" valign="top">
+<a href="matlab:coder.internal.code2model('PILAN2021a:91242')" name="code2model" class="code2model">&lt;S3&gt;/Constant</a>
+</td>
+<td width="26%" align="left" valign="top">
+PwmBox_P.Constant_Value
+</td>
+<td width="21%" align="left" valign="top">
+real_T
+</td>
+<td width="10%" align="right" valign="top">
+1
+</td>
+
+</tr>
+<tr class="odd">
+<td width="42%" align="left" valign="top">
+<a href="matlab:coder.internal.code2model('PILAN2021a:91243')" name="code2model" class="code2model">&lt;S3&gt;/Constant1</a>
+</td>
+<td width="26%" align="left" valign="top">
+PwmBox_P.Constant1_Value
+</td>
+<td width="21%" align="left" valign="top">
+real_T
+</td>
+<td width="10%" align="right" valign="top">
+1
+</td>
+
+</tr>
+<tr class="even">
+<td width="42%" align="left" valign="top">
+<a href="matlab:coder.internal.code2model('PILAN2021a:90752')" name="code2model" class="code2model">&lt;S1&gt;/100 Hz</a>
+</td>
+<td width="26%" align="left" valign="top">
+PwmBox_P.u00Hz_Amp
+</td>
+<td width="21%" align="left" valign="top">
+real_T
+</td>
+<td width="10%" align="right" valign="top">
+1
+</td>
+
+</tr>
+<tr class="odd">
+<td width="42%" align="left" valign="top">
+<a href="matlab:coder.internal.code2model('PILAN2021a:90752')" name="code2model" class="code2model">&lt;S1&gt;/100 Hz</a>
+</td>
+<td width="26%" align="left" valign="top">
+PwmBox_P.u00Hz_Period
+</td>
+<td width="21%" align="left" valign="top">
+real_T
+</td>
+<td width="10%" align="right" valign="top">
+1
+</td>
+
+</tr>
+<tr class="even">
+<td width="42%" align="left" valign="top">
+<a href="matlab:coder.internal.code2model('PILAN2021a:90752')" name="code2model" class="code2model">&lt;S1&gt;/100 Hz</a>
+</td>
+<td width="26%" align="left" valign="top">
+PwmBox_P.u00Hz_Duty
+</td>
+<td width="21%" align="left" valign="top">
+real_T
+</td>
+<td width="10%" align="right" valign="top">
+1
+</td>
+
+</tr>
+<tr class="odd">
+<td width="42%" align="left" valign="top">
+<a href="matlab:coder.internal.code2model('PILAN2021a:90752')" name="code2model" class="code2model">&lt;S1&gt;/100 Hz</a>
+</td>
+<td width="26%" align="left" valign="top">
+PwmBox_P.u00Hz_PhaseDelay
+</td>
+<td width="21%" align="left" valign="top">
+real_T
+</td>
+<td width="10%" align="right" valign="top">
+1
+</td>
+
+</tr>
+<tr class="even">
+<td width="42%" align="left" valign="top">
+<a href="matlab:coder.internal.code2model('PILAN2021a:91165')" name="code2model" class="code2model">&lt;S2&gt;/PWM</a>
+</td>
+<td width="26%" align="left" valign="top">
+PwmBox_P.PWM_Y0
+</td>
+<td width="21%" align="left" valign="top">
+struct_a1AjtOphUHLNf8OXJ9zaQB
+</td>
+<td width="10%" align="right" valign="top">
+1
+</td>
+
+</tr>
+<tr class="odd">
+<td width="42%" align="left" valign="top">
+<a href="matlab:coder.internal.code2model('PILAN2021a:91179')" name="code2model" class="code2model">&lt;S5&gt;/Constant7</a>
+</td>
+<td width="26%" align="left" valign="top">
+PwmBox_P.Constant7_Value
+</td>
+<td width="21%" align="left" valign="top">
+real32_T
+</td>
+<td width="10%" align="right" valign="top">
+[4  3]
+</td>
+
+</tr>
+<tr class="even">
+<td width="42%" align="left" valign="top">
+<a href="matlab:coder.internal.code2model('PILAN2021a:91216:198')" name="code2model" class="code2model">&lt;S6&gt;/Gain</a>
+</td>
+<td width="26%" align="left" valign="top">
+PwmBox_P.Gain_Gain
+</td>
+<td width="21%" align="left" valign="top">
+real32_T
+</td>
+<td width="10%" align="right" valign="top">
+1
+</td>
+
+</tr>
+<tr class="odd">
+<td width="42%" align="left" valign="top">
+<a href="matlab:coder.internal.code2model('PILAN2021a:91220')" name="code2model" class="code2model">&lt;S4&gt;/Saturation</a>
+</td>
+<td width="26%" align="left" valign="top">
+PwmBox_P.Saturation_UpperSat
+</td>
+<td width="21%" align="left" valign="top">
+real32_T
+</td>
+<td width="10%" align="right" valign="top">
+1
+</td>
+
+</tr>
+<tr class="even">
+<td width="42%" align="left" valign="top">
+<a href="matlab:coder.internal.code2model('PILAN2021a:91220')" name="code2model" class="code2model">&lt;S4&gt;/Saturation</a>
+</td>
+<td width="26%" align="left" valign="top">
+PwmBox_P.Saturation_LowerSat
+</td>
+<td width="21%" align="left" valign="top">
+real32_T
+</td>
+<td width="10%" align="right" valign="top">
+1
+</td>
+
+</tr>
+<tr class="odd">
+<td width="42%" align="left" valign="top">
+<a href="matlab:coder.internal.code2model('PILAN2021a:91204')" name="code2model" class="code2model">&lt;S4&gt;/Gain</a>
+</td>
+<td width="26%" align="left" valign="top">
+PwmBox_P.Gain_Gain_g
+</td>
+<td width="21%" align="left" valign="top">
+real32_T
+</td>
+<td width="10%" align="right" valign="top">
+1
+</td>
+
+</tr>
+<tr class="even">
+<td width="42%" align="left" valign="top">
+<a href="matlab:coder.internal.code2model('PILAN2021a:91208')" name="code2model" class="code2model">&lt;S4&gt;/One</a>
+</td>
+<td width="26%" align="left" valign="top">
+PwmBox_P.One_Value
+</td>
+<td width="21%" align="left" valign="top">
+real32_T
+</td>
+<td width="10%" align="right" valign="top">
+1
+</td>
+
+</tr>
+<tr class="odd">
+<td width="42%" align="left" valign="top">
+<a href="matlab:coder.internal.code2model('PILAN2021a:91217:198')" name="code2model" class="code2model">&lt;S7&gt;/Gain</a>
+</td>
+<td width="26%" align="left" valign="top">
+PwmBox_P.Gain_Gain_i
+</td>
+<td width="21%" align="left" valign="top">
+real32_T
+</td>
+<td width="10%" align="right" valign="top">
+1
+</td>
+
+</tr>
+<tr class="even">
+<td width="42%" align="left" valign="top">
+<a href="matlab:coder.internal.code2model('PILAN2021a:91221')" name="code2model" class="code2model">&lt;S4&gt;/Saturation1</a>
+</td>
+<td width="26%" align="left" valign="top">
+PwmBox_P.Saturation1_UpperSat
+</td>
+<td width="21%" align="left" valign="top">
+real32_T
+</td>
+<td width="10%" align="right" valign="top">
+1
+</td>
+
+</tr>
+<tr class="odd">
+<td width="42%" align="left" valign="top">
+<a href="matlab:coder.internal.code2model('PILAN2021a:91221')" name="code2model" class="code2model">&lt;S4&gt;/Saturation1</a>
+</td>
+<td width="26%" align="left" valign="top">
+PwmBox_P.Saturation1_LowerSat
+</td>
+<td width="21%" align="left" valign="top">
+real32_T
+</td>
+<td width="10%" align="right" valign="top">
+1
+</td>
+
+</tr>
+<tr class="even">
+<td width="42%" align="left" valign="top">
+<a href="matlab:coder.internal.code2model('PILAN2021a:91205')" name="code2model" class="code2model">&lt;S4&gt;/Gain1</a>
+</td>
+<td width="26%" align="left" valign="top">
+PwmBox_P.Gain1_Gain
+</td>
+<td width="21%" align="left" valign="top">
+real32_T
+</td>
+<td width="10%" align="right" valign="top">
+1
+</td>
+
+</tr>
+<tr class="odd">
+<td width="42%" align="left" valign="top">
+<a href="matlab:coder.internal.code2model('PILAN2021a:91209')" name="code2model" class="code2model">&lt;S4&gt;/One1</a>
+</td>
+<td width="26%" align="left" valign="top">
+PwmBox_P.One1_Value
+</td>
+<td width="21%" align="left" valign="top">
+real32_T
+</td>
+<td width="10%" align="right" valign="top">
+1
+</td>
+
+</tr>
+<tr class="even">
+<td width="42%" align="left" valign="top">
+<a href="matlab:coder.internal.code2model('PILAN2021a:91218:198')" name="code2model" class="code2model">&lt;S8&gt;/Gain</a>
+</td>
+<td width="26%" align="left" valign="top">
+PwmBox_P.Gain_Gain_j
+</td>
+<td width="21%" align="left" valign="top">
+real32_T
+</td>
+<td width="10%" align="right" valign="top">
+1
+</td>
+
+</tr>
+<tr class="odd">
+<td width="42%" align="left" valign="top">
+<a href="matlab:coder.internal.code2model('PILAN2021a:91222')" name="code2model" class="code2model">&lt;S4&gt;/Saturation2</a>
+</td>
+<td width="26%" align="left" valign="top">
+PwmBox_P.Saturation2_UpperSat
+</td>
+<td width="21%" align="left" valign="top">
+real32_T
+</td>
+<td width="10%" align="right" valign="top">
+1
+</td>
+
+</tr>
+<tr class="even">
+<td width="42%" align="left" valign="top">
+<a href="matlab:coder.internal.code2model('PILAN2021a:91222')" name="code2model" class="code2model">&lt;S4&gt;/Saturation2</a>
+</td>
+<td width="26%" align="left" valign="top">
+PwmBox_P.Saturation2_LowerSat
+</td>
+<td width="21%" align="left" valign="top">
+real32_T
+</td>
+<td width="10%" align="right" valign="top">
+1
+</td>
+
+</tr>
+<tr class="odd">
+<td width="42%" align="left" valign="top">
+<a href="matlab:coder.internal.code2model('PILAN2021a:91206')" name="code2model" class="code2model">&lt;S4&gt;/Gain2</a>
+</td>
+<td width="26%" align="left" valign="top">
+PwmBox_P.Gain2_Gain
+</td>
+<td width="21%" align="left" valign="top">
+real32_T
+</td>
+<td width="10%" align="right" valign="top">
+1
+</td>
+
+</tr>
+<tr class="even">
+<td width="42%" align="left" valign="top">
+<a href="matlab:coder.internal.code2model('PILAN2021a:91210')" name="code2model" class="code2model">&lt;S4&gt;/One2</a>
+</td>
+<td width="26%" align="left" valign="top">
+PwmBox_P.One2_Value
+</td>
+<td width="21%" align="left" valign="top">
+real32_T
+</td>
+<td width="10%" align="right" valign="top">
+1
+</td>
+
+</tr>
+<tr class="odd">
+<td width="42%" align="left" valign="top">
+<a href="matlab:coder.internal.code2model('PILAN2021a:91219:198')" name="code2model" class="code2model">&lt;S9&gt;/Gain</a>
+</td>
+<td width="26%" align="left" valign="top">
+PwmBox_P.Gain_Gain_o
+</td>
+<td width="21%" align="left" valign="top">
+real32_T
+</td>
+<td width="10%" align="right" valign="top">
+1
+</td>
+
+</tr>
+<tr class="even">
+<td width="42%" align="left" valign="top">
+<a href="matlab:coder.internal.code2model('PILAN2021a:91223')" name="code2model" class="code2model">&lt;S4&gt;/Saturation3</a>
+</td>
+<td width="26%" align="left" valign="top">
+PwmBox_P.Saturation3_UpperSat
+</td>
+<td width="21%" align="left" valign="top">
+real32_T
+</td>
+<td width="10%" align="right" valign="top">
+1
+</td>
+
+</tr>
+<tr class="odd">
+<td width="42%" align="left" valign="top">
+<a href="matlab:coder.internal.code2model('PILAN2021a:91223')" name="code2model" class="code2model">&lt;S4&gt;/Saturation3</a>
+</td>
+<td width="26%" align="left" valign="top">
+PwmBox_P.Saturation3_LowerSat
+</td>
+<td width="21%" align="left" valign="top">
+real32_T
+</td>
+<td width="10%" align="right" valign="top">
+1
+</td>
+
+</tr>
+<tr class="even">
+<td width="42%" align="left" valign="top">
+<a href="matlab:coder.internal.code2model('PILAN2021a:91207')" name="code2model" class="code2model">&lt;S4&gt;/Gain3</a>
+</td>
+<td width="26%" align="left" valign="top">
+PwmBox_P.Gain3_Gain
+</td>
+<td width="21%" align="left" valign="top">
+real32_T
+</td>
+<td width="10%" align="right" valign="top">
+1
+</td>
+
+</tr>
+<tr class="odd">
+<td width="42%" align="left" valign="top">
+<a href="matlab:coder.internal.code2model('PILAN2021a:91211')" name="code2model" class="code2model">&lt;S4&gt;/One3</a>
+</td>
+<td width="26%" align="left" valign="top">
+PwmBox_P.One3_Value
+</td>
+<td width="21%" align="left" valign="top">
+real32_T
+</td>
+<td width="10%" align="right" valign="top">
+1
+</td>
+
+</tr>
+<tr class="even">
+<td width="42%" align="left" valign="top">
+<a href="matlab:coder.internal.code2model('PILAN2021a:91225')" name="code2model" class="code2model">&lt;S4&gt;/One7</a>
+</td>
+<td width="26%" align="left" valign="top">
+PwmBox_P.One7_Value
+</td>
+<td width="21%" align="left" valign="top">
+boolean_T
+</td>
+<td width="10%" align="right" valign="top">
+1
+</td>
+
+</tr>
+<tr class="odd">
+<td width="42%" align="left" valign="top">
+<a href="matlab:coder.internal.code2model('PILAN2021a:91212')" name="code2model" class="code2model">&lt;S4&gt;/One4</a>
+</td>
+<td width="26%" align="left" valign="top">
+PwmBox_P.One4_Value
+</td>
+<td width="21%" align="left" valign="top">
+boolean_T
+</td>
+<td width="10%" align="right" valign="top">
+1
+</td>
+
+</tr>
+
+</table>
+<h3>
+<a name="sec_Data_Stores">
+Data Stores
+</a>
+
+</h3>
+<p>
+No data stores in the model; note that this report lists only data stores with non-auto storage class and global data stores
+</p>
+
+</body>
+
+</html>

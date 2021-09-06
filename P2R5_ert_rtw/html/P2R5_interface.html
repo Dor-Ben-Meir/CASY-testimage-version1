@@ -1,0 +1,2028 @@
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" /><link rel="stylesheet" type="text/css" href="rtwreport.css" /><script language="JavaScript" type="text/javascript">function rtwTableShrink(o) {var t = o.nextSibling;if (t.nodeType != 1) {t = t.nextSibling;}if (t.style.display == "none") {t.style.display = "";o.innerHTML = "[-]"} else {t.style.display = "none";o.innerHTML = "[+] ... "}}</script><script language="JavaScript" type="text/javascript" src="rtwreport_utils.js"></script><meta http-equiv="Content-Type" content="text/html; charset=UTF-8" /><title>
+Code Interface Report for P2R5
+</title>
+
+</head>
+<body ONLOAD="try {if (top) {if (top.rtwPageOnLoad) top.rtwPageOnLoad('rtwIdCodeInterface'); else local_onload();}} catch(err) {};">
+<h1>
+Code Interface Report for P2R5
+</h1>
+<h3>
+Table of Contents
+</h3>
+<ul>
+<li>
+<a href="#sec_Entry-Point_Functions">
+Entry-Point Functions
+</a>
+
+</li>
+<li>
+<a href="#sec_Inports">
+Inports
+</a>
+
+</li>
+<li>
+<a href="#sec_Outports">
+Outports
+</a>
+
+</li>
+<li>
+<a href="#sec_Interface_Parameters">
+Interface Parameters
+</a>
+
+</li>
+<li>
+<a href="#sec_Data_Stores">
+Data Stores
+</a>
+
+</li>
+
+</ul>
+<h3>
+<a name="sec_Entry-Point_Functions">
+Entry-Point Functions
+</a>
+
+</h3>
+<p>
+Function: <a href="P2R5_cpp.html#fcn_P2R5_initialize">P2R5_initialize</a>
+</p>
+<table width="100%" class="AltRow" cellspacing="0">
+<tr class="even">
+<td width="25%" align="left" valign="top">
+Prototype
+</td>
+<td width="75%" align="left" valign="top">
+<b>
+void P2R5_initialize(void)
+</b>
+
+</td>
+
+</tr>
+<tr class="odd">
+<td width="25%" align="left" valign="top">
+Description
+</td>
+<td width="75%" align="left" valign="top">
+Initialization entry point of generated code
+</td>
+
+</tr>
+<tr class="even">
+<td width="25%" align="left" valign="top">
+Timing
+</td>
+<td width="75%" align="left" valign="top">
+Must be called exactly once
+</td>
+
+</tr>
+<tr class="odd">
+<td width="25%" align="left" valign="top">
+Arguments
+</td>
+<td width="75%" align="left" valign="top">
+None
+</td>
+
+</tr>
+<tr class="even">
+<td width="25%" align="left" valign="top">
+Return value
+</td>
+<td width="75%" align="left" valign="top">
+None
+</td>
+
+</tr>
+<tr class="odd">
+<td width="25%" align="left" valign="top">
+Header file
+</td>
+<td width="75%" align="left" valign="top">
+<a href="P2R5_h.html">P2R5.h</a>
+</td>
+
+</tr>
+
+</table>
+<p>
+Function: <a href="P2R5_cpp.html#fcn_P2R5_step">P2R5_step</a>
+</p>
+<table width="100%" class="AltRow" cellspacing="0">
+<tr class="even">
+<td width="25%" align="left" valign="top">
+Prototype
+</td>
+<td width="75%" align="left" valign="top">
+<b>
+void P2R5_step(void)
+</b>
+
+</td>
+
+</tr>
+<tr class="odd">
+<td width="25%" align="left" valign="top">
+Description
+</td>
+<td width="75%" align="left" valign="top">
+Output entry point of generated code
+</td>
+
+</tr>
+<tr class="even">
+<td width="25%" align="left" valign="top">
+Timing
+</td>
+<td width="75%" align="left" valign="top">
+Must be called periodically, every 0.001 seconds
+</td>
+
+</tr>
+<tr class="odd">
+<td width="25%" align="left" valign="top">
+Arguments
+</td>
+<td width="75%" align="left" valign="top">
+None
+</td>
+
+</tr>
+<tr class="even">
+<td width="25%" align="left" valign="top">
+Return value
+</td>
+<td width="75%" align="left" valign="top">
+None
+</td>
+
+</tr>
+<tr class="odd">
+<td width="25%" align="left" valign="top">
+Header file
+</td>
+<td width="75%" align="left" valign="top">
+<a href="P2R5_h.html">P2R5.h</a>
+</td>
+
+</tr>
+
+</table>
+<p>
+Function: <a href="P2R5_cpp.html#fcn_P2R5_terminate">P2R5_terminate</a>
+</p>
+<table width="100%" class="AltRow" cellspacing="0">
+<tr class="even">
+<td width="25%" align="left" valign="top">
+Prototype
+</td>
+<td width="75%" align="left" valign="top">
+<b>
+void P2R5_terminate(void)
+</b>
+
+</td>
+
+</tr>
+<tr class="odd">
+<td width="25%" align="left" valign="top">
+Description
+</td>
+<td width="75%" align="left" valign="top">
+Termination entry point of generated code
+</td>
+
+</tr>
+<tr class="even">
+<td width="25%" align="left" valign="top">
+Timing
+</td>
+<td width="75%" align="left" valign="top">
+Must be called exactly once
+</td>
+
+</tr>
+<tr class="odd">
+<td width="25%" align="left" valign="top">
+Arguments
+</td>
+<td width="75%" align="left" valign="top">
+None
+</td>
+
+</tr>
+<tr class="even">
+<td width="25%" align="left" valign="top">
+Return value
+</td>
+<td width="75%" align="left" valign="top">
+None
+</td>
+
+</tr>
+<tr class="odd">
+<td width="25%" align="left" valign="top">
+Header file
+</td>
+<td width="75%" align="left" valign="top">
+<a href="P2R5_h.html">P2R5.h</a>
+</td>
+
+</tr>
+
+</table>
+<h3>
+<a name="sec_Inports">
+Inports
+</a>
+
+</h3>
+<table width="100%" class="AltRow FirstColumn" cellspacing="0">
+<tr class="heading">
+<th width="42%" align="left" valign="top">
+<b>
+Block Name
+</b>
+
+</th>
+<th width="26%" align="left" valign="top">
+<b>
+Code Identifier
+</b>
+
+</th>
+<th width="21%" align="left" valign="top">
+<b>
+Data Type
+</b>
+
+</th>
+<th width="10%" align="right" valign="top">
+<b>
+Dimension
+</b>
+
+</th>
+
+</tr>
+<tr class="even">
+<td width="42%" align="left" valign="top">
+<a href="matlab:coder.internal.code2model('PILEncoder:88668')" name="code2model" class="code2model">&lt;S1&gt;/Serial In</a>
+</td>
+<td width="26%" align="left" valign="top">
+P2R5_U.SerialIn
+</td>
+<td width="21%" align="left" valign="top">
+real32_T
+</td>
+<td width="10%" align="right" valign="top">
+[23]
+</td>
+
+</tr>
+
+</table>
+<h3>
+<a name="sec_Outports">
+Outports
+</a>
+
+</h3>
+<table width="100%" class="AltRow FirstColumn" cellspacing="0">
+<tr class="heading">
+<th width="42%" align="left" valign="top">
+<b>
+Block Name
+</b>
+
+</th>
+<th width="26%" align="left" valign="top">
+<b>
+Code Identifier
+</b>
+
+</th>
+<th width="21%" align="left" valign="top">
+<b>
+Data Type
+</b>
+
+</th>
+<th width="10%" align="right" valign="top">
+<b>
+Dimension
+</b>
+
+</th>
+
+</tr>
+<tr class="even">
+<td width="42%" align="left" valign="top">
+<a href="matlab:coder.internal.code2model('PILEncoder:88881')" name="code2model" class="code2model">&lt;S1&gt;/Serial Out</a>
+</td>
+<td width="26%" align="left" valign="top">
+P2R5_Y.SerialOut
+</td>
+<td width="21%" align="left" valign="top">
+real32_T
+</td>
+<td width="10%" align="right" valign="top">
+[18]
+</td>
+
+</tr>
+<tr class="odd">
+<td width="42%" align="left" valign="top">
+<a href="matlab:coder.internal.code2model('PILEncoder:90025')" name="code2model" class="code2model">&lt;S1&gt;/flight_mode_enum</a>
+</td>
+<td width="26%" align="left" valign="top">
+P2R5_Y.flight_mode_enum
+</td>
+<td width="21%" align="left" valign="top">
+real_T
+</td>
+<td width="10%" align="right" valign="top">
+1
+</td>
+
+</tr>
+
+</table>
+<h3>
+<a name="sec_Interface_Parameters">
+Interface Parameters
+</a>
+
+</h3>
+<span title="Click to shrink or expand table" onclick="rtwTableShrink(this)">[-]</span><table width="100%" class="AltRow FirstColumn" cellspacing="0">
+<tr class="heading">
+<th width="42%" align="left" valign="top">
+<b>
+Parameter Source
+</b>
+
+</th>
+<th width="26%" align="left" valign="top">
+<b>
+Code Identifier
+</b>
+
+</th>
+<th width="21%" align="left" valign="top">
+<b>
+Data Type
+</b>
+
+</th>
+<th width="10%" align="right" valign="top">
+<b>
+Dimension
+</b>
+
+</th>
+
+</tr>
+<tr class="even">
+<td width="42%" align="left" valign="top">
+Flight_Logic
+</td>
+<td width="26%" align="left" valign="top">
+P2R5_P.Flight_Logic
+</td>
+<td width="21%" align="left" valign="top">
+struct_KbuHZdFirwgp0Ajtitq2dC
+</td>
+<td width="10%" align="right" valign="top">
+1
+</td>
+
+</tr>
+<tr class="odd">
+<td width="42%" align="left" valign="top">
+<a href="matlab:coder.internal.code2model('PILEncoder:89884')" name="code2model" class="code2model">&lt;S19&gt;/Compare To Constant</a>
+</td>
+<td width="26%" align="left" valign="top">
+P2R5_P.CompareToConstant_const
+</td>
+<td width="21%" align="left" valign="top">
+real32_T
+</td>
+<td width="10%" align="right" valign="top">
+1
+</td>
+
+</tr>
+<tr class="even">
+<td width="42%" align="left" valign="top">
+<a href="matlab:coder.internal.code2model('PILEncoder:89915')" name="code2model" class="code2model">&lt;S20&gt;/Compare To Constant2</a>
+</td>
+<td width="26%" align="left" valign="top">
+P2R5_P.CompareToConstant2_const
+</td>
+<td width="21%" align="left" valign="top">
+real32_T
+</td>
+<td width="10%" align="right" valign="top">
+1
+</td>
+
+</tr>
+<tr class="odd">
+<td width="42%" align="left" valign="top">
+<a href="matlab:coder.internal.code2model('PILEncoder:89826')" name="code2model" class="code2model">&lt;S17&gt;/Compare To Constant</a>
+</td>
+<td width="26%" align="left" valign="top">
+P2R5_P.CompareToConstant_const_g
+</td>
+<td width="21%" align="left" valign="top">
+real32_T
+</td>
+<td width="10%" align="right" valign="top">
+1
+</td>
+
+</tr>
+<tr class="even">
+<td width="42%" align="left" valign="top">
+<a href="matlab:coder.internal.code2model('PILEncoder:89829')" name="code2model" class="code2model">&lt;S17&gt;/Detect Decrease</a>
+</td>
+<td width="26%" align="left" valign="top">
+P2R5_P.DetectDecrease_vinit
+</td>
+<td width="21%" align="left" valign="top">
+real32_T
+</td>
+<td width="10%" align="right" valign="top">
+1
+</td>
+
+</tr>
+<tr class="odd">
+<td width="42%" align="left" valign="top">
+<a href="matlab:coder.internal.code2model('PILEncoder:90021')" name="code2model" class="code2model">&lt;S3&gt;/Fin Deflections</a>
+</td>
+<td width="26%" align="left" valign="top">
+P2R5_P.FinDeflections_Y0
+</td>
+<td width="21%" align="left" valign="top">
+struct_9UxdYJe4udzuwrp3psUiN
+</td>
+<td width="10%" align="right" valign="top">
+1
+</td>
+
+</tr>
+<tr class="even">
+<td width="42%" align="left" valign="top">
+<a href="matlab:coder.internal.code2model('PILEncoder:90418')" name="code2model" class="code2model">&lt;S3&gt;/Fin Cmd</a>
+</td>
+<td width="26%" align="left" valign="top">
+P2R5_P.FinCmd_Y0
+</td>
+<td width="21%" align="left" valign="top">
+struct_9UxdYJe4udzuwrp3psUiN
+</td>
+<td width="10%" align="right" valign="top">
+1
+</td>
+
+</tr>
+<tr class="odd">
+<td width="42%" align="left" valign="top">
+<a href="matlab:coder.internal.code2model('PILEncoder:89855')" name="code2model" class="code2model">&lt;S18&gt;/Constant4</a>
+</td>
+<td width="26%" align="left" valign="top">
+P2R5_P.Constant4_Value
+</td>
+<td width="21%" align="left" valign="top">
+real_T
+</td>
+<td width="10%" align="right" valign="top">
+1
+</td>
+
+</tr>
+<tr class="even">
+<td width="42%" align="left" valign="top">
+<a href="matlab:coder.internal.code2model('PILEncoder:89857')" name="code2model" class="code2model">&lt;S18&gt;/Constant6</a>
+</td>
+<td width="26%" align="left" valign="top">
+P2R5_P.Constant6_Value
+</td>
+<td width="21%" align="left" valign="top">
+real_T
+</td>
+<td width="10%" align="right" valign="top">
+1
+</td>
+
+</tr>
+<tr class="odd">
+<td width="42%" align="left" valign="top">
+<a href="matlab:coder.internal.code2model('PILEncoder:89854')" name="code2model" class="code2model">&lt;S18&gt;/Constant3</a>
+</td>
+<td width="26%" align="left" valign="top">
+P2R5_P.Constant3_Value
+</td>
+<td width="21%" align="left" valign="top">
+real_T
+</td>
+<td width="10%" align="right" valign="top">
+1
+</td>
+
+</tr>
+<tr class="even">
+<td width="42%" align="left" valign="top">
+<a href="matlab:coder.internal.code2model('PILEncoder:89853')" name="code2model" class="code2model">&lt;S18&gt;/Constant2</a>
+</td>
+<td width="26%" align="left" valign="top">
+P2R5_P.Constant2_Value
+</td>
+<td width="21%" align="left" valign="top">
+real_T
+</td>
+<td width="10%" align="right" valign="top">
+1
+</td>
+
+</tr>
+<tr class="odd">
+<td width="42%" align="left" valign="top">
+<a href="matlab:coder.internal.code2model('PILEncoder:89852')" name="code2model" class="code2model">&lt;S18&gt;/Constant1</a>
+</td>
+<td width="26%" align="left" valign="top">
+P2R5_P.Constant1_Value
+</td>
+<td width="21%" align="left" valign="top">
+real_T
+</td>
+<td width="10%" align="right" valign="top">
+1
+</td>
+
+</tr>
+<tr class="even">
+<td width="42%" align="left" valign="top">
+<a href="matlab:coder.internal.code2model('PILEncoder:89851')" name="code2model" class="code2model">&lt;S18&gt;/Constant</a>
+</td>
+<td width="26%" align="left" valign="top">
+P2R5_P.Constant_Value
+</td>
+<td width="21%" align="left" valign="top">
+real_T
+</td>
+<td width="10%" align="right" valign="top">
+1
+</td>
+
+</tr>
+<tr class="odd">
+<td width="42%" align="left" valign="top">
+<a href="matlab:coder.internal.code2model('PILEncoder:89844')" name="code2model" class="code2model">&lt;S13&gt;/Constant5</a>
+</td>
+<td width="26%" align="left" valign="top">
+P2R5_P.Constant5_Value
+</td>
+<td width="21%" align="left" valign="top">
+real_T
+</td>
+<td width="10%" align="right" valign="top">
+1
+</td>
+
+</tr>
+<tr class="even">
+<td width="42%" align="left" valign="top">
+<a href="matlab:coder.internal.code2model('PILEncoder:89856')" name="code2model" class="code2model">&lt;S18&gt;/Constant5</a>
+</td>
+<td width="26%" align="left" valign="top">
+P2R5_P.Constant5_Value_k
+</td>
+<td width="21%" align="left" valign="top">
+real_T
+</td>
+<td width="10%" align="right" valign="top">
+1
+</td>
+
+</tr>
+<tr class="odd">
+<td width="42%" align="left" valign="top">
+<a href="matlab:coder.internal.code2model('PILEncoder:89886')" name="code2model" class="code2model">&lt;S19&gt;/Constant</a>
+</td>
+<td width="26%" align="left" valign="top">
+P2R5_P.Constant_Value_l
+</td>
+<td width="21%" align="left" valign="top">
+real_T
+</td>
+<td width="10%" align="right" valign="top">
+1
+</td>
+
+</tr>
+<tr class="even">
+<td width="42%" align="left" valign="top">
+<a href="matlab:coder.internal.code2model('PILEncoder:90023')" name="code2model" class="code2model">&lt;S3&gt;/flight_mode_enum</a>
+</td>
+<td width="26%" align="left" valign="top">
+P2R5_P.flight_mode_enum_Y0
+</td>
+<td width="21%" align="left" valign="top">
+real_T
+</td>
+<td width="10%" align="right" valign="top">
+1
+</td>
+
+</tr>
+<tr class="odd">
+<td width="42%" align="left" valign="top">
+<a href="matlab:coder.internal.code2model('PILEncoder:89833')" name="code2model" class="code2model">&lt;S26&gt;/Constant1</a>
+</td>
+<td width="26%" align="left" valign="top">
+P2R5_P.Constant1_Value_g
+</td>
+<td width="21%" align="left" valign="top">
+real_T
+</td>
+<td width="10%" align="right" valign="top">
+1
+</td>
+
+</tr>
+<tr class="even">
+<td width="42%" align="left" valign="top">
+<a href="matlab:coder.internal.code2model('PILEncoder:89834')" name="code2model" class="code2model">&lt;S26&gt;/Discrete-Time Integrator</a>
+</td>
+<td width="26%" align="left" valign="top">
+P2R5_P.DiscreteTimeIntegrator_gainval
+</td>
+<td width="21%" align="left" valign="top">
+real_T
+</td>
+<td width="10%" align="right" valign="top">
+1
+</td>
+
+</tr>
+<tr class="odd">
+<td width="42%" align="left" valign="top">
+<a href="matlab:coder.internal.code2model('PILEncoder:89892')" name="code2model" class="code2model">&lt;S30&gt;/Constant1</a>
+</td>
+<td width="26%" align="left" valign="top">
+P2R5_P.Constant1_Value_m
+</td>
+<td width="21%" align="left" valign="top">
+real_T
+</td>
+<td width="10%" align="right" valign="top">
+1
+</td>
+
+</tr>
+<tr class="even">
+<td width="42%" align="left" valign="top">
+<a href="matlab:coder.internal.code2model('PILEncoder:89893')" name="code2model" class="code2model">&lt;S30&gt;/Discrete-Time Integrator</a>
+</td>
+<td width="26%" align="left" valign="top">
+P2R5_P.DiscreteTimeIntegrator_gainval_l
+</td>
+<td width="21%" align="left" valign="top">
+real_T
+</td>
+<td width="10%" align="right" valign="top">
+1
+</td>
+
+</tr>
+<tr class="odd">
+<td width="42%" align="left" valign="top">
+<a href="matlab:coder.internal.code2model('PILEncoder:89920')" name="code2model" class="code2model">&lt;S35&gt;/Constant1</a>
+</td>
+<td width="26%" align="left" valign="top">
+P2R5_P.Constant1_Value_f
+</td>
+<td width="21%" align="left" valign="top">
+real_T
+</td>
+<td width="10%" align="right" valign="top">
+1
+</td>
+
+</tr>
+<tr class="even">
+<td width="42%" align="left" valign="top">
+<a href="matlab:coder.internal.code2model('PILEncoder:89921')" name="code2model" class="code2model">&lt;S35&gt;/Discrete-Time Integrator</a>
+</td>
+<td width="26%" align="left" valign="top">
+P2R5_P.DiscreteTimeIntegrator_gainval_k
+</td>
+<td width="21%" align="left" valign="top">
+real_T
+</td>
+<td width="10%" align="right" valign="top">
+1
+</td>
+
+</tr>
+<tr class="odd">
+<td width="42%" align="left" valign="top">
+<a href="matlab:coder.internal.code2model('PILEncoder:89942')" name="code2model" class="code2model">&lt;S39&gt;/Constant1</a>
+</td>
+<td width="26%" align="left" valign="top">
+P2R5_P.Constant1_Value_e
+</td>
+<td width="21%" align="left" valign="top">
+real_T
+</td>
+<td width="10%" align="right" valign="top">
+1
+</td>
+
+</tr>
+<tr class="even">
+<td width="42%" align="left" valign="top">
+<a href="matlab:coder.internal.code2model('PILEncoder:89943')" name="code2model" class="code2model">&lt;S39&gt;/Discrete-Time Integrator</a>
+</td>
+<td width="26%" align="left" valign="top">
+P2R5_P.DiscreteTimeIntegrator_gainval_o
+</td>
+<td width="21%" align="left" valign="top">
+real_T
+</td>
+<td width="10%" align="right" valign="top">
+1
+</td>
+
+</tr>
+<tr class="odd">
+<td width="42%" align="left" valign="top">
+<a href="matlab:coder.internal.code2model('PILEncoder:89832')" name="code2model" class="code2model">&lt;S26&gt;/Constant</a>
+</td>
+<td width="26%" align="left" valign="top">
+P2R5_P.Constant_Value_a
+</td>
+<td width="21%" align="left" valign="top">
+real_T
+</td>
+<td width="10%" align="right" valign="top">
+1
+</td>
+
+</tr>
+<tr class="even">
+<td width="42%" align="left" valign="top">
+<a href="matlab:coder.internal.code2model('PILEncoder:89891')" name="code2model" class="code2model">&lt;S30&gt;/Constant</a>
+</td>
+<td width="26%" align="left" valign="top">
+P2R5_P.Constant_Value_lo
+</td>
+<td width="21%" align="left" valign="top">
+real_T
+</td>
+<td width="10%" align="right" valign="top">
+1
+</td>
+
+</tr>
+<tr class="odd">
+<td width="42%" align="left" valign="top">
+<a href="matlab:coder.internal.code2model('PILEncoder:89919')" name="code2model" class="code2model">&lt;S35&gt;/Constant</a>
+</td>
+<td width="26%" align="left" valign="top">
+P2R5_P.Constant_Value_b
+</td>
+<td width="21%" align="left" valign="top">
+real_T
+</td>
+<td width="10%" align="right" valign="top">
+1
+</td>
+
+</tr>
+<tr class="even">
+<td width="42%" align="left" valign="top">
+<a href="matlab:coder.internal.code2model('PILEncoder:89941')" name="code2model" class="code2model">&lt;S39&gt;/Constant</a>
+</td>
+<td width="26%" align="left" valign="top">
+P2R5_P.Constant_Value_bq
+</td>
+<td width="21%" align="left" valign="top">
+real_T
+</td>
+<td width="10%" align="right" valign="top">
+1
+</td>
+
+</tr>
+<tr class="odd">
+<td width="42%" align="left" valign="top">
+<a href="matlab:coder.internal.code2model('PILEncoder:90450')" name="code2model" class="code2model">&lt;S9&gt;/One5</a>
+</td>
+<td width="26%" align="left" valign="top">
+P2R5_P.One5_Value
+</td>
+<td width="21%" align="left" valign="top">
+real_T
+</td>
+<td width="10%" align="right" valign="top">
+1
+</td>
+
+</tr>
+<tr class="even">
+<td width="42%" align="left" valign="top">
+<a href="matlab:coder.internal.code2model('PILEncoder:90451')" name="code2model" class="code2model">&lt;S9&gt;/One6</a>
+</td>
+<td width="26%" align="left" valign="top">
+P2R5_P.One6_Value
+</td>
+<td width="21%" align="left" valign="top">
+real_T
+</td>
+<td width="10%" align="right" valign="top">
+1
+</td>
+
+</tr>
+<tr class="odd">
+<td width="42%" align="left" valign="top">
+<a href="matlab:coder.internal.code2model('PILEncoder:90465')" name="code2model" class="code2model">&lt;S2&gt;/100 Hz</a>
+</td>
+<td width="26%" align="left" valign="top">
+P2R5_P.u00Hz_Amp
+</td>
+<td width="21%" align="left" valign="top">
+real_T
+</td>
+<td width="10%" align="right" valign="top">
+1
+</td>
+
+</tr>
+<tr class="even">
+<td width="42%" align="left" valign="top">
+<a href="matlab:coder.internal.code2model('PILEncoder:90465')" name="code2model" class="code2model">&lt;S2&gt;/100 Hz</a>
+</td>
+<td width="26%" align="left" valign="top">
+P2R5_P.u00Hz_Period
+</td>
+<td width="21%" align="left" valign="top">
+real_T
+</td>
+<td width="10%" align="right" valign="top">
+1
+</td>
+
+</tr>
+<tr class="odd">
+<td width="42%" align="left" valign="top">
+<a href="matlab:coder.internal.code2model('PILEncoder:90465')" name="code2model" class="code2model">&lt;S2&gt;/100 Hz</a>
+</td>
+<td width="26%" align="left" valign="top">
+P2R5_P.u00Hz_Duty
+</td>
+<td width="21%" align="left" valign="top">
+real_T
+</td>
+<td width="10%" align="right" valign="top">
+1
+</td>
+
+</tr>
+<tr class="even">
+<td width="42%" align="left" valign="top">
+<a href="matlab:coder.internal.code2model('PILEncoder:90465')" name="code2model" class="code2model">&lt;S2&gt;/100 Hz</a>
+</td>
+<td width="26%" align="left" valign="top">
+P2R5_P.u00Hz_PhaseDelay
+</td>
+<td width="21%" align="left" valign="top">
+real_T
+</td>
+<td width="10%" align="right" valign="top">
+1
+</td>
+
+</tr>
+<tr class="odd">
+<td width="42%" align="left" valign="top">
+<a href="matlab:coder.internal.code2model('PILEncoder:89731')" name="code2model" class="code2model">&lt;S16&gt;/Constant7</a>
+</td>
+<td width="26%" align="left" valign="top">
+P2R5_P.Constant7_Value
+</td>
+<td width="21%" align="left" valign="top">
+real32_T
+</td>
+<td width="10%" align="right" valign="top">
+[4  3]
+</td>
+
+</tr>
+<tr class="even">
+<td width="42%" align="left" valign="top">
+<a href="matlab:coder.internal.code2model('PILEncoder:89792')" name="code2model" class="code2model">&lt;S3&gt;/Gain1</a>
+</td>
+<td width="26%" align="left" valign="top">
+P2R5_P.Gain1_Gain
+</td>
+<td width="21%" align="left" valign="top">
+real32_T
+</td>
+<td width="10%" align="right" valign="top">
+1
+</td>
+
+</tr>
+<tr class="odd">
+<td width="42%" align="left" valign="top">
+<a href="matlab:coder.internal.code2model('PILEncoder:89690')" name="code2model" class="code2model">&lt;S41&gt;/1-D Lookup Table3</a>
+</td>
+<td width="26%" align="left" valign="top">
+P2R5_P.uDLookupTable3_tableData
+</td>
+<td width="21%" align="left" valign="top">
+real32_T
+</td>
+<td width="10%" align="right" valign="top">
+[3  10]
+</td>
+
+</tr>
+<tr class="even">
+<td width="42%" align="left" valign="top">
+<a href="matlab:coder.internal.code2model('PILEncoder:89690')" name="code2model" class="code2model">&lt;S41&gt;/1-D Lookup Table3</a>
+</td>
+<td width="26%" align="left" valign="top">
+P2R5_P.uDLookupTable3_bp01Data
+</td>
+<td width="21%" align="left" valign="top">
+real32_T
+</td>
+<td width="10%" align="right" valign="top">
+[1  3]
+</td>
+
+</tr>
+<tr class="odd">
+<td width="42%" align="left" valign="top">
+<a href="matlab:coder.internal.code2model('PILEncoder:89690')" name="code2model" class="code2model">&lt;S41&gt;/1-D Lookup Table3</a>
+</td>
+<td width="26%" align="left" valign="top">
+P2R5_P.uDLookupTable3_bp02Data
+</td>
+<td width="21%" align="left" valign="top">
+real32_T
+</td>
+<td width="10%" align="right" valign="top">
+[1  10]
+</td>
+
+</tr>
+<tr class="even">
+<td width="42%" align="left" valign="top">
+<a href="matlab:coder.internal.code2model('PILEncoder:89692')" name="code2model" class="code2model">&lt;S41&gt;/1-D Lookup Table5</a>
+</td>
+<td width="26%" align="left" valign="top">
+P2R5_P.uDLookupTable5_tableData
+</td>
+<td width="21%" align="left" valign="top">
+real32_T
+</td>
+<td width="10%" align="right" valign="top">
+[3  10]
+</td>
+
+</tr>
+<tr class="odd">
+<td width="42%" align="left" valign="top">
+<a href="matlab:coder.internal.code2model('PILEncoder:89692')" name="code2model" class="code2model">&lt;S41&gt;/1-D Lookup Table5</a>
+</td>
+<td width="26%" align="left" valign="top">
+P2R5_P.uDLookupTable5_bp01Data
+</td>
+<td width="21%" align="left" valign="top">
+real32_T
+</td>
+<td width="10%" align="right" valign="top">
+[1  3]
+</td>
+
+</tr>
+<tr class="even">
+<td width="42%" align="left" valign="top">
+<a href="matlab:coder.internal.code2model('PILEncoder:89692')" name="code2model" class="code2model">&lt;S41&gt;/1-D Lookup Table5</a>
+</td>
+<td width="26%" align="left" valign="top">
+P2R5_P.uDLookupTable5_bp02Data
+</td>
+<td width="21%" align="left" valign="top">
+real32_T
+</td>
+<td width="10%" align="right" valign="top">
+[1  10]
+</td>
+
+</tr>
+<tr class="odd">
+<td width="42%" align="left" valign="top">
+<a href="matlab:coder.internal.code2model('PILEncoder:89680')" name="code2model" class="code2model">&lt;S15&gt;/Constant</a>
+</td>
+<td width="26%" align="left" valign="top">
+P2R5_P.Constant_Value_o
+</td>
+<td width="21%" align="left" valign="top">
+real32_T
+</td>
+<td width="10%" align="right" valign="top">
+1
+</td>
+
+</tr>
+<tr class="even">
+<td width="42%" align="left" valign="top">
+<a href="matlab:coder.internal.code2model('PILEncoder:89681')" name="code2model" class="code2model">&lt;S15&gt;/Discrete-Time Integrator</a>
+</td>
+<td width="26%" align="left" valign="top">
+P2R5_P.DiscreteTimeIntegrator_gainval_m
+</td>
+<td width="21%" align="left" valign="top">
+real32_T
+</td>
+<td width="10%" align="right" valign="top">
+1
+</td>
+
+</tr>
+<tr class="odd">
+<td width="42%" align="left" valign="top">
+<a href="matlab:coder.internal.code2model('PILEncoder:89978')" name="code2model" class="code2model">&lt;S14&gt;/Discrete Transfer Fcn3</a>
+</td>
+<td width="26%" align="left" valign="top">
+P2R5_P.DiscreteTransferFcn3_NumCoef
+</td>
+<td width="21%" align="left" valign="top">
+real32_T
+</td>
+<td width="10%" align="right" valign="top">
+[1  2]
+</td>
+
+</tr>
+<tr class="even">
+<td width="42%" align="left" valign="top">
+<a href="matlab:coder.internal.code2model('PILEncoder:89978')" name="code2model" class="code2model">&lt;S14&gt;/Discrete Transfer Fcn3</a>
+</td>
+<td width="26%" align="left" valign="top">
+P2R5_P.DiscreteTransferFcn3_DenCoef
+</td>
+<td width="21%" align="left" valign="top">
+real32_T
+</td>
+<td width="10%" align="right" valign="top">
+[1  2]
+</td>
+
+</tr>
+<tr class="odd">
+<td width="42%" align="left" valign="top">
+<a href="matlab:coder.internal.code2model('PILEncoder:89978')" name="code2model" class="code2model">&lt;S14&gt;/Discrete Transfer Fcn3</a>
+</td>
+<td width="26%" align="left" valign="top">
+P2R5_P.DiscreteTransferFcn3_InitialStates
+</td>
+<td width="21%" align="left" valign="top">
+real32_T
+</td>
+<td width="10%" align="right" valign="top">
+1
+</td>
+
+</tr>
+<tr class="even">
+<td width="42%" align="left" valign="top">
+<a href="matlab:coder.internal.code2model('PILEncoder:89786')" name="code2model" class="code2model">&lt;S15&gt;/Zero</a>
+</td>
+<td width="26%" align="left" valign="top">
+P2R5_P.Zero_Value
+</td>
+<td width="21%" align="left" valign="top">
+real32_T
+</td>
+<td width="10%" align="right" valign="top">
+1
+</td>
+
+</tr>
+<tr class="odd">
+<td width="42%" align="left" valign="top">
+<a href="matlab:coder.internal.code2model('PILEncoder:89691')" name="code2model" class="code2model">&lt;S41&gt;/1-D Lookup Table4</a>
+</td>
+<td width="26%" align="left" valign="top">
+P2R5_P.uDLookupTable4_tableData
+</td>
+<td width="21%" align="left" valign="top">
+real32_T
+</td>
+<td width="10%" align="right" valign="top">
+[3  10]
+</td>
+
+</tr>
+<tr class="even">
+<td width="42%" align="left" valign="top">
+<a href="matlab:coder.internal.code2model('PILEncoder:89691')" name="code2model" class="code2model">&lt;S41&gt;/1-D Lookup Table4</a>
+</td>
+<td width="26%" align="left" valign="top">
+P2R5_P.uDLookupTable4_bp01Data
+</td>
+<td width="21%" align="left" valign="top">
+real32_T
+</td>
+<td width="10%" align="right" valign="top">
+[1  3]
+</td>
+
+</tr>
+<tr class="odd">
+<td width="42%" align="left" valign="top">
+<a href="matlab:coder.internal.code2model('PILEncoder:89691')" name="code2model" class="code2model">&lt;S41&gt;/1-D Lookup Table4</a>
+</td>
+<td width="26%" align="left" valign="top">
+P2R5_P.uDLookupTable4_bp02Data
+</td>
+<td width="21%" align="left" valign="top">
+real32_T
+</td>
+<td width="10%" align="right" valign="top">
+[1  10]
+</td>
+
+</tr>
+<tr class="even">
+<td width="42%" align="left" valign="top">
+<a href="matlab:coder.internal.code2model('PILEncoder:89975')" name="code2model" class="code2model">&lt;S14&gt;/Discrete Transfer Fcn</a>
+</td>
+<td width="26%" align="left" valign="top">
+P2R5_P.DiscreteTransferFcn_NumCoef
+</td>
+<td width="21%" align="left" valign="top">
+real32_T
+</td>
+<td width="10%" align="right" valign="top">
+[1  2]
+</td>
+
+</tr>
+<tr class="odd">
+<td width="42%" align="left" valign="top">
+<a href="matlab:coder.internal.code2model('PILEncoder:89975')" name="code2model" class="code2model">&lt;S14&gt;/Discrete Transfer Fcn</a>
+</td>
+<td width="26%" align="left" valign="top">
+P2R5_P.DiscreteTransferFcn_DenCoef
+</td>
+<td width="21%" align="left" valign="top">
+real32_T
+</td>
+<td width="10%" align="right" valign="top">
+[1  2]
+</td>
+
+</tr>
+<tr class="even">
+<td width="42%" align="left" valign="top">
+<a href="matlab:coder.internal.code2model('PILEncoder:89975')" name="code2model" class="code2model">&lt;S14&gt;/Discrete Transfer Fcn</a>
+</td>
+<td width="26%" align="left" valign="top">
+P2R5_P.DiscreteTransferFcn_InitialStates
+</td>
+<td width="21%" align="left" valign="top">
+real32_T
+</td>
+<td width="10%" align="right" valign="top">
+1
+</td>
+
+</tr>
+<tr class="odd">
+<td width="42%" align="left" valign="top">
+<a href="matlab:coder.internal.code2model('PILEncoder:89036')" name="code2model" class="code2model">&lt;S43&gt;/One9</a>
+</td>
+<td width="26%" align="left" valign="top">
+P2R5_P.One9_Value
+</td>
+<td width="21%" align="left" valign="top">
+real32_T
+</td>
+<td width="10%" align="right" valign="top">
+1
+</td>
+
+</tr>
+<tr class="even">
+<td width="42%" align="left" valign="top">
+<a href="matlab:coder.internal.code2model('PILEncoder:89025')" name="code2model" class="code2model">&lt;S43&gt;/One</a>
+</td>
+<td width="26%" align="left" valign="top">
+P2R5_P.One_Value
+</td>
+<td width="21%" align="left" valign="top">
+real32_T
+</td>
+<td width="10%" align="right" valign="top">
+1
+</td>
+
+</tr>
+<tr class="odd">
+<td width="42%" align="left" valign="top">
+<a href="matlab:coder.internal.code2model('PILEncoder:89026')" name="code2model" class="code2model">&lt;S43&gt;/One1</a>
+</td>
+<td width="26%" align="left" valign="top">
+P2R5_P.One1_Value
+</td>
+<td width="21%" align="left" valign="top">
+real32_T
+</td>
+<td width="10%" align="right" valign="top">
+1
+</td>
+
+</tr>
+<tr class="even">
+<td width="42%" align="left" valign="top">
+<a href="matlab:coder.internal.code2model('PILEncoder:89029')" name="code2model" class="code2model">&lt;S43&gt;/One2</a>
+</td>
+<td width="26%" align="left" valign="top">
+P2R5_P.One2_Value
+</td>
+<td width="21%" align="left" valign="top">
+real32_T
+</td>
+<td width="10%" align="right" valign="top">
+1
+</td>
+
+</tr>
+<tr class="odd">
+<td width="42%" align="left" valign="top">
+<a href="matlab:coder.internal.code2model('PILEncoder:89030')" name="code2model" class="code2model">&lt;S43&gt;/One3</a>
+</td>
+<td width="26%" align="left" valign="top">
+P2R5_P.One3_Value
+</td>
+<td width="21%" align="left" valign="top">
+real32_T
+</td>
+<td width="10%" align="right" valign="top">
+1
+</td>
+
+</tr>
+<tr class="even">
+<td width="42%" align="left" valign="top">
+<a href="matlab:coder.internal.code2model('PILEncoder:89031')" name="code2model" class="code2model">&lt;S43&gt;/One4</a>
+</td>
+<td width="26%" align="left" valign="top">
+P2R5_P.One4_Value
+</td>
+<td width="21%" align="left" valign="top">
+real32_T
+</td>
+<td width="10%" align="right" valign="top">
+1
+</td>
+
+</tr>
+<tr class="odd">
+<td width="42%" align="left" valign="top">
+<a href="matlab:coder.internal.code2model('PILEncoder:89032')" name="code2model" class="code2model">&lt;S43&gt;/One5</a>
+</td>
+<td width="26%" align="left" valign="top">
+P2R5_P.One5_Value_o
+</td>
+<td width="21%" align="left" valign="top">
+real32_T
+</td>
+<td width="10%" align="right" valign="top">
+1
+</td>
+
+</tr>
+<tr class="even">
+<td width="42%" align="left" valign="top">
+<a href="matlab:coder.internal.code2model('PILEncoder:89033')" name="code2model" class="code2model">&lt;S43&gt;/One6</a>
+</td>
+<td width="26%" align="left" valign="top">
+P2R5_P.One6_Value_c
+</td>
+<td width="21%" align="left" valign="top">
+real32_T
+</td>
+<td width="10%" align="right" valign="top">
+1
+</td>
+
+</tr>
+<tr class="odd">
+<td width="42%" align="left" valign="top">
+<a href="matlab:coder.internal.code2model('PILEncoder:89034')" name="code2model" class="code2model">&lt;S43&gt;/One7</a>
+</td>
+<td width="26%" align="left" valign="top">
+P2R5_P.One7_Value
+</td>
+<td width="21%" align="left" valign="top">
+real32_T
+</td>
+<td width="10%" align="right" valign="top">
+1
+</td>
+
+</tr>
+<tr class="even">
+<td width="42%" align="left" valign="top">
+<a href="matlab:coder.internal.code2model('PILEncoder:89035')" name="code2model" class="code2model">&lt;S43&gt;/One8</a>
+</td>
+<td width="26%" align="left" valign="top">
+P2R5_P.One8_Value
+</td>
+<td width="21%" align="left" valign="top">
+real32_T
+</td>
+<td width="10%" align="right" valign="top">
+1
+</td>
+
+</tr>
+<tr class="odd">
+<td width="42%" align="left" valign="top">
+<a href="matlab:coder.internal.code2model('PILEncoder:89039')" name="code2model" class="code2model">&lt;S7&gt;/Switch</a>
+</td>
+<td width="26%" align="left" valign="top">
+P2R5_P.Switch_1_Threshold
+</td>
+<td width="21%" align="left" valign="top">
+real32_T
+</td>
+<td width="10%" align="right" valign="top">
+1
+</td>
+
+</tr>
+<tr class="even">
+<td width="42%" align="left" valign="top">
+<a href="matlab:coder.internal.code2model('PILEncoder:89039')" name="code2model" class="code2model">&lt;S7&gt;/Switch</a>
+</td>
+<td width="26%" align="left" valign="top">
+P2R5_P.Switch_2_Threshold
+</td>
+<td width="21%" align="left" valign="top">
+real32_T
+</td>
+<td width="10%" align="right" valign="top">
+1
+</td>
+
+</tr>
+<tr class="odd">
+<td width="42%" align="left" valign="top">
+<a href="matlab:coder.internal.code2model('PILEncoder:89039')" name="code2model" class="code2model">&lt;S7&gt;/Switch</a>
+</td>
+<td width="26%" align="left" valign="top">
+P2R5_P.Switch_3_Threshold
+</td>
+<td width="21%" align="left" valign="top">
+real32_T
+</td>
+<td width="10%" align="right" valign="top">
+1
+</td>
+
+</tr>
+<tr class="even">
+<td width="42%" align="left" valign="top">
+<a href="matlab:coder.internal.code2model('PILEncoder:89039')" name="code2model" class="code2model">&lt;S7&gt;/Switch</a>
+</td>
+<td width="26%" align="left" valign="top">
+P2R5_P.Switch_4_Threshold
+</td>
+<td width="21%" align="left" valign="top">
+real32_T
+</td>
+<td width="10%" align="right" valign="top">
+1
+</td>
+
+</tr>
+<tr class="odd">
+<td width="42%" align="left" valign="top">
+<a href="matlab:coder.internal.code2model('PILEncoder:89039')" name="code2model" class="code2model">&lt;S7&gt;/Switch</a>
+</td>
+<td width="26%" align="left" valign="top">
+P2R5_P.Switch_5_Threshold
+</td>
+<td width="21%" align="left" valign="top">
+real32_T
+</td>
+<td width="10%" align="right" valign="top">
+1
+</td>
+
+</tr>
+<tr class="even">
+<td width="42%" align="left" valign="top">
+<a href="matlab:coder.internal.code2model('PILEncoder:89039')" name="code2model" class="code2model">&lt;S7&gt;/Switch</a>
+</td>
+<td width="26%" align="left" valign="top">
+P2R5_P.Switch_6_Threshold
+</td>
+<td width="21%" align="left" valign="top">
+real32_T
+</td>
+<td width="10%" align="right" valign="top">
+1
+</td>
+
+</tr>
+<tr class="odd">
+<td width="42%" align="left" valign="top">
+<a href="matlab:coder.internal.code2model('PILEncoder:89039')" name="code2model" class="code2model">&lt;S7&gt;/Switch</a>
+</td>
+<td width="26%" align="left" valign="top">
+P2R5_P.Switch_7_Threshold
+</td>
+<td width="21%" align="left" valign="top">
+real32_T
+</td>
+<td width="10%" align="right" valign="top">
+1
+</td>
+
+</tr>
+<tr class="even">
+<td width="42%" align="left" valign="top">
+<a href="matlab:coder.internal.code2model('PILEncoder:89039')" name="code2model" class="code2model">&lt;S7&gt;/Switch</a>
+</td>
+<td width="26%" align="left" valign="top">
+P2R5_P.Switch_8_Threshold
+</td>
+<td width="21%" align="left" valign="top">
+real32_T
+</td>
+<td width="10%" align="right" valign="top">
+1
+</td>
+
+</tr>
+<tr class="odd">
+<td width="42%" align="left" valign="top">
+<a href="matlab:coder.internal.code2model('PILEncoder:89039')" name="code2model" class="code2model">&lt;S7&gt;/Switch</a>
+</td>
+<td width="26%" align="left" valign="top">
+P2R5_P.Switch_9_Threshold
+</td>
+<td width="21%" align="left" valign="top">
+real32_T
+</td>
+<td width="10%" align="right" valign="top">
+1
+</td>
+
+</tr>
+<tr class="even">
+<td width="42%" align="left" valign="top">
+<a href="matlab:coder.internal.code2model('PILEncoder:89039')" name="code2model" class="code2model">&lt;S7&gt;/Switch</a>
+</td>
+<td width="26%" align="left" valign="top">
+P2R5_P.Switch_10_Threshold
+</td>
+<td width="21%" align="left" valign="top">
+real32_T
+</td>
+<td width="10%" align="right" valign="top">
+1
+</td>
+
+</tr>
+<tr class="odd">
+<td width="42%" align="left" valign="top">
+<a href="matlab:coder.internal.code2model('PILEncoder:90454:198')" name="code2model" class="code2model">&lt;S45&gt;/Gain</a>
+</td>
+<td width="26%" align="left" valign="top">
+P2R5_P.Gain_Gain
+</td>
+<td width="21%" align="left" valign="top">
+real32_T
+</td>
+<td width="10%" align="right" valign="top">
+1
+</td>
+
+</tr>
+<tr class="even">
+<td width="42%" align="left" valign="top">
+<a href="matlab:coder.internal.code2model('PILEncoder:90458')" name="code2model" class="code2model">&lt;S9&gt;/Saturation</a>
+</td>
+<td width="26%" align="left" valign="top">
+P2R5_P.Saturation_UpperSat
+</td>
+<td width="21%" align="left" valign="top">
+real32_T
+</td>
+<td width="10%" align="right" valign="top">
+1
+</td>
+
+</tr>
+<tr class="odd">
+<td width="42%" align="left" valign="top">
+<a href="matlab:coder.internal.code2model('PILEncoder:90458')" name="code2model" class="code2model">&lt;S9&gt;/Saturation</a>
+</td>
+<td width="26%" align="left" valign="top">
+P2R5_P.Saturation_LowerSat
+</td>
+<td width="21%" align="left" valign="top">
+real32_T
+</td>
+<td width="10%" align="right" valign="top">
+1
+</td>
+
+</tr>
+<tr class="even">
+<td width="42%" align="left" valign="top">
+<a href="matlab:coder.internal.code2model('PILEncoder:90441')" name="code2model" class="code2model">&lt;S9&gt;/Gain</a>
+</td>
+<td width="26%" align="left" valign="top">
+P2R5_P.Gain_Gain_h
+</td>
+<td width="21%" align="left" valign="top">
+real32_T
+</td>
+<td width="10%" align="right" valign="top">
+1
+</td>
+
+</tr>
+<tr class="odd">
+<td width="42%" align="left" valign="top">
+<a href="matlab:coder.internal.code2model('PILEncoder:90445')" name="code2model" class="code2model">&lt;S9&gt;/One</a>
+</td>
+<td width="26%" align="left" valign="top">
+P2R5_P.One_Value_a
+</td>
+<td width="21%" align="left" valign="top">
+real32_T
+</td>
+<td width="10%" align="right" valign="top">
+1
+</td>
+
+</tr>
+<tr class="even">
+<td width="42%" align="left" valign="top">
+<a href="matlab:coder.internal.code2model('PILEncoder:90455:198')" name="code2model" class="code2model">&lt;S46&gt;/Gain</a>
+</td>
+<td width="26%" align="left" valign="top">
+P2R5_P.Gain_Gain_m
+</td>
+<td width="21%" align="left" valign="top">
+real32_T
+</td>
+<td width="10%" align="right" valign="top">
+1
+</td>
+
+</tr>
+<tr class="odd">
+<td width="42%" align="left" valign="top">
+<a href="matlab:coder.internal.code2model('PILEncoder:90459')" name="code2model" class="code2model">&lt;S9&gt;/Saturation1</a>
+</td>
+<td width="26%" align="left" valign="top">
+P2R5_P.Saturation1_UpperSat
+</td>
+<td width="21%" align="left" valign="top">
+real32_T
+</td>
+<td width="10%" align="right" valign="top">
+1
+</td>
+
+</tr>
+<tr class="even">
+<td width="42%" align="left" valign="top">
+<a href="matlab:coder.internal.code2model('PILEncoder:90459')" name="code2model" class="code2model">&lt;S9&gt;/Saturation1</a>
+</td>
+<td width="26%" align="left" valign="top">
+P2R5_P.Saturation1_LowerSat
+</td>
+<td width="21%" align="left" valign="top">
+real32_T
+</td>
+<td width="10%" align="right" valign="top">
+1
+</td>
+
+</tr>
+<tr class="odd">
+<td width="42%" align="left" valign="top">
+<a href="matlab:coder.internal.code2model('PILEncoder:90442')" name="code2model" class="code2model">&lt;S9&gt;/Gain1</a>
+</td>
+<td width="26%" align="left" valign="top">
+P2R5_P.Gain1_Gain_l
+</td>
+<td width="21%" align="left" valign="top">
+real32_T
+</td>
+<td width="10%" align="right" valign="top">
+1
+</td>
+
+</tr>
+<tr class="even">
+<td width="42%" align="left" valign="top">
+<a href="matlab:coder.internal.code2model('PILEncoder:90446')" name="code2model" class="code2model">&lt;S9&gt;/One1</a>
+</td>
+<td width="26%" align="left" valign="top">
+P2R5_P.One1_Value_b
+</td>
+<td width="21%" align="left" valign="top">
+real32_T
+</td>
+<td width="10%" align="right" valign="top">
+1
+</td>
+
+</tr>
+<tr class="odd">
+<td width="42%" align="left" valign="top">
+<a href="matlab:coder.internal.code2model('PILEncoder:90456:198')" name="code2model" class="code2model">&lt;S47&gt;/Gain</a>
+</td>
+<td width="26%" align="left" valign="top">
+P2R5_P.Gain_Gain_l
+</td>
+<td width="21%" align="left" valign="top">
+real32_T
+</td>
+<td width="10%" align="right" valign="top">
+1
+</td>
+
+</tr>
+<tr class="even">
+<td width="42%" align="left" valign="top">
+<a href="matlab:coder.internal.code2model('PILEncoder:90460')" name="code2model" class="code2model">&lt;S9&gt;/Saturation2</a>
+</td>
+<td width="26%" align="left" valign="top">
+P2R5_P.Saturation2_UpperSat
+</td>
+<td width="21%" align="left" valign="top">
+real32_T
+</td>
+<td width="10%" align="right" valign="top">
+1
+</td>
+
+</tr>
+<tr class="odd">
+<td width="42%" align="left" valign="top">
+<a href="matlab:coder.internal.code2model('PILEncoder:90460')" name="code2model" class="code2model">&lt;S9&gt;/Saturation2</a>
+</td>
+<td width="26%" align="left" valign="top">
+P2R5_P.Saturation2_LowerSat
+</td>
+<td width="21%" align="left" valign="top">
+real32_T
+</td>
+<td width="10%" align="right" valign="top">
+1
+</td>
+
+</tr>
+<tr class="even">
+<td width="42%" align="left" valign="top">
+<a href="matlab:coder.internal.code2model('PILEncoder:90443')" name="code2model" class="code2model">&lt;S9&gt;/Gain2</a>
+</td>
+<td width="26%" align="left" valign="top">
+P2R5_P.Gain2_Gain
+</td>
+<td width="21%" align="left" valign="top">
+real32_T
+</td>
+<td width="10%" align="right" valign="top">
+1
+</td>
+
+</tr>
+<tr class="odd">
+<td width="42%" align="left" valign="top">
+<a href="matlab:coder.internal.code2model('PILEncoder:90447')" name="code2model" class="code2model">&lt;S9&gt;/One2</a>
+</td>
+<td width="26%" align="left" valign="top">
+P2R5_P.One2_Value_o
+</td>
+<td width="21%" align="left" valign="top">
+real32_T
+</td>
+<td width="10%" align="right" valign="top">
+1
+</td>
+
+</tr>
+<tr class="even">
+<td width="42%" align="left" valign="top">
+<a href="matlab:coder.internal.code2model('PILEncoder:90457:198')" name="code2model" class="code2model">&lt;S48&gt;/Gain</a>
+</td>
+<td width="26%" align="left" valign="top">
+P2R5_P.Gain_Gain_p
+</td>
+<td width="21%" align="left" valign="top">
+real32_T
+</td>
+<td width="10%" align="right" valign="top">
+1
+</td>
+
+</tr>
+<tr class="odd">
+<td width="42%" align="left" valign="top">
+<a href="matlab:coder.internal.code2model('PILEncoder:90461')" name="code2model" class="code2model">&lt;S9&gt;/Saturation3</a>
+</td>
+<td width="26%" align="left" valign="top">
+P2R5_P.Saturation3_UpperSat
+</td>
+<td width="21%" align="left" valign="top">
+real32_T
+</td>
+<td width="10%" align="right" valign="top">
+1
+</td>
+
+</tr>
+<tr class="even">
+<td width="42%" align="left" valign="top">
+<a href="matlab:coder.internal.code2model('PILEncoder:90461')" name="code2model" class="code2model">&lt;S9&gt;/Saturation3</a>
+</td>
+<td width="26%" align="left" valign="top">
+P2R5_P.Saturation3_LowerSat
+</td>
+<td width="21%" align="left" valign="top">
+real32_T
+</td>
+<td width="10%" align="right" valign="top">
+1
+</td>
+
+</tr>
+<tr class="odd">
+<td width="42%" align="left" valign="top">
+<a href="matlab:coder.internal.code2model('PILEncoder:90444')" name="code2model" class="code2model">&lt;S9&gt;/Gain3</a>
+</td>
+<td width="26%" align="left" valign="top">
+P2R5_P.Gain3_Gain
+</td>
+<td width="21%" align="left" valign="top">
+real32_T
+</td>
+<td width="10%" align="right" valign="top">
+1
+</td>
+
+</tr>
+<tr class="even">
+<td width="42%" align="left" valign="top">
+<a href="matlab:coder.internal.code2model('PILEncoder:90448')" name="code2model" class="code2model">&lt;S9&gt;/One3</a>
+</td>
+<td width="26%" align="left" valign="top">
+P2R5_P.One3_Value_p
+</td>
+<td width="21%" align="left" valign="top">
+real32_T
+</td>
+<td width="10%" align="right" valign="top">
+1
+</td>
+
+</tr>
+<tr class="odd">
+<td width="42%" align="left" valign="top">
+<a href="matlab:coder.internal.code2model('PILEncoder:89084')" name="code2model" class="code2model">&lt;S2&gt;/Zero</a>
+</td>
+<td width="26%" align="left" valign="top">
+P2R5_P.Zero_Value_a
+</td>
+<td width="21%" align="left" valign="top">
+real32_T
+</td>
+<td width="10%" align="right" valign="top">
+1
+</td>
+
+</tr>
+<tr class="even">
+<td width="42%" align="left" valign="top">
+<a href="matlab:coder.internal.code2model('PILEncoder:89690')" name="code2model" class="code2model">&lt;S41&gt;/1-D Lookup Table3</a>
+</td>
+<td width="26%" align="left" valign="top">
+P2R5_P.uDLookupTable3_maxIndex
+</td>
+<td width="21%" align="left" valign="top">
+uint32_T
+</td>
+<td width="10%" align="right" valign="top">
+[2]
+</td>
+
+</tr>
+<tr class="odd">
+<td width="42%" align="left" valign="top">
+<a href="matlab:coder.internal.code2model('PILEncoder:89692')" name="code2model" class="code2model">&lt;S41&gt;/1-D Lookup Table5</a>
+</td>
+<td width="26%" align="left" valign="top">
+P2R5_P.uDLookupTable5_maxIndex
+</td>
+<td width="21%" align="left" valign="top">
+uint32_T
+</td>
+<td width="10%" align="right" valign="top">
+[2]
+</td>
+
+</tr>
+<tr class="even">
+<td width="42%" align="left" valign="top">
+<a href="matlab:coder.internal.code2model('PILEncoder:89691')" name="code2model" class="code2model">&lt;S41&gt;/1-D Lookup Table4</a>
+</td>
+<td width="26%" align="left" valign="top">
+P2R5_P.uDLookupTable4_maxIndex
+</td>
+<td width="21%" align="left" valign="top">
+uint32_T
+</td>
+<td width="10%" align="right" valign="top">
+[2]
+</td>
+
+</tr>
+<tr class="odd">
+<td width="42%" align="left" valign="top">
+<a href="matlab:coder.internal.code2model('PILEncoder:90419')" name="code2model" class="code2model">&lt;S3&gt;/Recovery</a>
+</td>
+<td width="26%" align="left" valign="top">
+P2R5_P.Recovery_Y0
+</td>
+<td width="21%" align="left" valign="top">
+boolean_T
+</td>
+<td width="10%" align="right" valign="top">
+1
+</td>
+
+</tr>
+<tr class="even">
+<td width="42%" align="left" valign="top">
+<a href="matlab:coder.internal.code2model('PILEncoder:90400')" name="code2model" class="code2model">&lt;S11&gt;/Constant</a>
+</td>
+<td width="26%" align="left" valign="top">
+P2R5_P.Constant_Value_c
+</td>
+<td width="21%" align="left" valign="top">
+boolean_T
+</td>
+<td width="10%" align="right" valign="top">
+1
+</td>
+
+</tr>
+<tr class="odd">
+<td width="42%" align="left" valign="top">
+<a href="matlab:coder.internal.code2model('PILEncoder:89904')" name="code2model" class="code2model">&lt;S19&gt;/Memory</a>
+</td>
+<td width="26%" align="left" valign="top">
+P2R5_P.Memory_InitialCondition
+</td>
+<td width="21%" align="left" valign="top">
+boolean_T
+</td>
+<td width="10%" align="right" valign="top">
+1
+</td>
+
+</tr>
+<tr class="even">
+<td width="42%" align="left" valign="top">
+<a href="matlab:coder.internal.code2model('PILEncoder:89901')" name="code2model" class="code2model">&lt;S31&gt;/Memory</a>
+</td>
+<td width="26%" align="left" valign="top">
+P2R5_P.Memory_InitialCondition_f
+</td>
+<td width="21%" align="left" valign="top">
+boolean_T
+</td>
+<td width="10%" align="right" valign="top">
+1
+</td>
+
+</tr>
+<tr class="odd">
+<td width="42%" align="left" valign="top">
+<a href="matlab:coder.internal.code2model('PILEncoder:89926')" name="code2model" class="code2model">&lt;S36&gt;/Memory</a>
+</td>
+<td width="26%" align="left" valign="top">
+P2R5_P.Memory_InitialCondition_p
+</td>
+<td width="21%" align="left" valign="top">
+boolean_T
+</td>
+<td width="10%" align="right" valign="top">
+1
+</td>
+
+</tr>
+<tr class="even">
+<td width="42%" align="left" valign="top">
+<a href="matlab:coder.internal.code2model('PILEncoder:89839')" name="code2model" class="code2model">&lt;S27&gt;/Memory</a>
+</td>
+<td width="26%" align="left" valign="top">
+P2R5_P.Memory_InitialCondition_n
+</td>
+<td width="21%" align="left" valign="top">
+boolean_T
+</td>
+<td width="10%" align="right" valign="top">
+1
+</td>
+
+</tr>
+<tr class="odd">
+<td width="42%" align="left" valign="top">
+<a href="matlab:coder.internal.code2model('PILEncoder:89948')" name="code2model" class="code2model">&lt;S40&gt;/Memory</a>
+</td>
+<td width="26%" align="left" valign="top">
+P2R5_P.Memory_InitialCondition_m
+</td>
+<td width="21%" align="left" valign="top">
+boolean_T
+</td>
+<td width="10%" align="right" valign="top">
+1
+</td>
+
+</tr>
+<tr class="even">
+<td width="42%" align="left" valign="top">
+<a href="matlab:coder.internal.code2model('PILEncoder:90452')" name="code2model" class="code2model">&lt;S9&gt;/One7</a>
+</td>
+<td width="26%" align="left" valign="top">
+P2R5_P.One7_Value_m
+</td>
+<td width="21%" align="left" valign="top">
+boolean_T
+</td>
+<td width="10%" align="right" valign="top">
+1
+</td>
+
+</tr>
+<tr class="odd">
+<td width="42%" align="left" valign="top">
+<a href="matlab:coder.internal.code2model('PILEncoder:90449')" name="code2model" class="code2model">&lt;S9&gt;/One4</a>
+</td>
+<td width="26%" align="left" valign="top">
+P2R5_P.One4_Value_n
+</td>
+<td width="21%" align="left" valign="top">
+boolean_T
+</td>
+<td width="10%" align="right" valign="top">
+1
+</td>
+
+</tr>
+
+</table>
+<h3>
+<a name="sec_Data_Stores">
+Data Stores
+</a>
+
+</h3>
+<p>
+No data stores in the model; note that this report lists only data stores with non-auto storage class and global data stores
+</p>
+
+</body>
+
+</html>

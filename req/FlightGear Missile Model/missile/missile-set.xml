@@ -1,0 +1,33 @@
+<?xml version="1.0"?>
+<!--
+************************************************************************
+
+************************************************************************
+-->
+
+<PropertyList>
+
+ <sim>
+  <description>Cornetto Missile</description>
+
+  <flight-model>network</flight-model>
+
+  <model>
+    <path>Aircraft/missile/Models/missile.xml</path>
+  </model>
+  <sound>
+    <path>Aircraft/missile/Sounds/missile-sound.xml</path>
+  </sound>
+  <systems>
+   <electrical>
+    <path>Aircraft/Generic/generic-electrical.xml</path>
+   </electrical>
+  </systems> 
+ <!-- The following piece of code sets the default view as the chase view -->
+  <current-view>
+    <view-number type="int">2</view-number>
+  </current-view>
+
+ </sim>
+
+</PropertyList>
